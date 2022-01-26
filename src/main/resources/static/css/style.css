@@ -33,8 +33,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 15px 5px;
-    background-color: gainsboro;
-    
+    /* background-color: gainsboro; */
 }
 
 .header_container h1 {
@@ -42,10 +41,12 @@ h2 {
     font-size: 1.3rem;
     color: #110066;
     text-align: center;
+    margin: 0 10px;
 }
 
-.deutz-fahr_logo {
-    width: 250px;
+.logo img, .deutz-fahr_logo img {
+    width: 100%;
+
 }
 
 nav {
@@ -151,7 +152,7 @@ nav a {
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 0 5px 0 5px;
 }
 
@@ -170,6 +171,11 @@ nav a {
     width: 100%;
 }
 
+.about {
+    background-color: rgb(228, 228, 228);
+    padding: 10px 0;
+}
+
 .about div {
     width: 45%;
 }
@@ -182,7 +188,7 @@ nav a {
 /*---- Footer ----------------------------------------------------------------*/
 
 footer {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .col {
@@ -268,9 +274,13 @@ footer {
     h4 {
         font-size: 0.7rem;
     }
+
+    .news h3 {
+        font-size: 0.9rem;
+    }
     .header_container {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         padding: 0;
     }
     .header_container h1, .tel  {
@@ -280,11 +290,10 @@ footer {
     nav {
         height: 30px;
     }
-    .deutz-fahr_logo {
-        width: 150px;
+    .logo, .deutz-fahr_logo {
+        width: 40%;
+    
     }
-
-
  }
 
 /* // Малые девайсы («ландшафтные», >= 575px) */
@@ -338,6 +347,10 @@ footer {
     .header_container h1  {
         font-size: 1rem;
     }
+
+    .news h3 {
+        font-size: 1.1rem;
+    }
  }
 
 /* // Средние девайсы («таблетки», >= 768px)  */
@@ -347,6 +360,9 @@ footer {
     }
     .news_items p {
         font-size: 0.6rem;
+    }
+    .header_container h1  {
+        font-size: 1.1rem;
     }
  }
 
