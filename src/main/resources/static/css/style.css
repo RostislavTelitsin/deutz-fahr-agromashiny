@@ -78,6 +78,8 @@ nav a {
 
 .tel {
     margin-right: 10px;
+    margin-bottom: 3px;
+    font-size: 0.9rem;
 }
 
 /*---- Content ----------------------------------------------------------------*/
@@ -254,7 +256,7 @@ footer {
     }
 
     .menu {
-        padding: 0.5rem 0.1rem;
+        padding: 1rem 0.1rem;
         margin-right: 10px;
     }
 
@@ -274,7 +276,10 @@ footer {
     h4 {
         font-size: 0.7rem;
     }
-
+    .tel {
+        margin-right: 5px;
+        font-size: 0.5rem; 
+    }
     .news h3 {
         font-size: 0.9rem;
     }
@@ -283,13 +288,10 @@ footer {
         justify-content: space-around;
         padding: 0;
     }
-    .header_container h1, .tel  {
+    .header_container h1  {
         display: none;
     }
 
-    nav {
-        height: 30px;
-    }
     .logo, .deutz-fahr_logo {
         width: 40%;
     
@@ -328,7 +330,6 @@ footer {
         width: 50%;
     }
     .menu {
-        padding: 0.5rem 0.1rem;
         margin-right: 10px;
     }
 
