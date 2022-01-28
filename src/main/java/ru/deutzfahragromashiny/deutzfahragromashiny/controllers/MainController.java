@@ -14,9 +14,14 @@ public class MainController {
 
     @GetMapping("/catalog/catalog1")
     public String catalog1(Model model) {
-
         model.addAttribute("/catalog1");
         return "catalog1";
+    }
 
+    @GetMapping("/login")
+    public String login(Model model) {
+        model.addAttribute("/login");
+
+        return "login";
     }
 }
