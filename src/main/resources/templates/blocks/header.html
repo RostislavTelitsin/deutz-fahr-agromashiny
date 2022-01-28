@@ -1,0 +1,26 @@
+<div th:fragment="header">
+    <div class="header_container">
+        <a href="https://agromashiny.ru/" target="_blank" class="logo"><img
+                src="../static/img/logo_agro_mashiny.png" th:src="@{../img/logo_agro_mashiny.png}"
+                alt="AgroMashiny"></a>
+        <h1>Продажа и обслуживание
+            сельскохозяйственной техники</h1>
+        <a href="#" class="deutz-fahr_logo"><img src="../static/img/DEUTZ-FAHR_LOGO.svg"
+                                                 th:src="@{../img/DEUTZ-FAHR_LOGO.svg}" alt="DEUTZ-FAHR"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a th:href="@{/}" href="index.html" class="menu">Главная</a></li>
+            <li><a href="#about" class="menu">О нас</a></li>
+            <li><a href="#content" class="menu">Каталог</a></li>
+            <li><a href="#news" class="menu">Новости</a></li>
+            <li><a href="#contacts" class="menu">Контакты</a></li>
+        </ul>
+        <div>
+            <a href="tel:+73833357393" class="tel">+7 383 335-73-93</a>
+            <a href="tel:+79139245321" class="tel">+7 913 924-53-21</a>
+            <a href="tel:+79833111031" class="tel">+7 983 311-10-31</a>
+        </div>
+    </nav>
+
+</div>
