@@ -41,63 +41,66 @@ public class MainController {
         return "index";
     }
 
-    @GetMapping("/catalog/catalog1")
-    public String catalog1(Model model) {
-        model.addAttribute("/catalog1");
-        return "catalog1";
-
-    }
 
     @GetMapping("/catalog/9seriaTTV")
     public String mod1(Model model) {
+        model.addAttribute("newsAndImgs", storageServ.getLastThreeNewsAndImgs());
         model.addAttribute("/9seriaTTV");
         return "9seriaTTV";
     }
 
     @GetMapping("/catalog/6seria")
     public String mod2(Model model) {
+        model.addAttribute("newsAndImgs", storageServ.getLastThreeNewsAndImgs());
         model.addAttribute("/6seria");
         return "6seria";
     }
 
     @GetMapping("/catalog/6seriaG")
     public String mod3(Model model) {
+        model.addAttribute("newsAndImgs", storageServ.getLastThreeNewsAndImgs());
         model.addAttribute("/6seriaG");
         return "6seriaG";
     }
 
     @GetMapping("/catalog/6wseriaProfi")
     public String mod4(Model model) {
+        model.addAttribute("newsAndImgs", storageServ.getLastThreeNewsAndImgs());
         model.addAttribute("/6wseriaProfi");
         return "6wseriaProfi";
     }
 
     @GetMapping("/catalog/6145whd")
     public String mod5(Model model) {
+        model.addAttribute("newsAndImgs", storageServ.getLastThreeNewsAndImgs());
         model.addAttribute("/6145whd");
         return "6145whd";
     }
 
     @GetMapping("/catalog/agrofarm115g")
     public String mod6(Model model) {
+        model.addAttribute("newsAndImgs", storageServ.getLastThreeNewsAndImgs());
         model.addAttribute("/agrofarm115g");
         return "agrofarm115g";
     }
 
     @GetMapping("/catalog/agroplusfvs")
     public String mod7(Model model) {
+        model.addAttribute("newsAndImgs", storageServ.getLastThreeNewsAndImgs());
         model.addAttribute("/agroplusfvs");
         return "agroplusfvs";
     }
 
     @GetMapping("/catalog/agrolux480")
     public String mod8(Model model) {
+        model.addAttribute("newsAndImgs", storageServ.getLastThreeNewsAndImgs());
         model.addAttribute("/agrolux480");
         return "agrolux480";
     }
 
     @GetMapping("/catalog/c7206")
     public String mod9(Model model) {
+        model.addAttribute("newsAndImgs", storageServ.getLastThreeNewsAndImgs());
         model.addAttribute("/c7206");
         return "c7206";
     }
