@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агромашины | Продажа и обслуживание сельскохозяйственной техники</title>
+    <link rel="shortcut icon" type="image/png" href="../static/img/favikon.png" th:href="@{../static/img/favikon.png}">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{../css/style.css}">
+</head>
+
+<body>
+    <div class="container">
+        <header th:insert="blocks/header :: header"></header>
+        <div class="main_container">
+            <section class="news"><a name="news"></a>
+                <h3>Новости</h3>
+                <div class="news_items">
+                    <img src="../static/img/IMG-20211110-WA0002.jpg" th:src="@{../img/IMG-20211110-WA0002.jpg}" alt="">
+                    <p>Аграрная неделя ноябрь 2021
+                    </p>
+                </div>
+                <div class="news_items">
+                    <img src="../static/img/IMG_20220120_105041.jpg" th:src="@{../img/IMG_20220120_105041.jpg}" alt="">
+                    <p>Отгрузка в хозяйство Новосибирской области
+                    </p>
+                </div>
+            </section>
+            <section class="content"><a name="content"></a>
+                <div class="item_char">
+                    <h2>AGROLUX 4.80</h2>
+                    <img src="https://thumb.tildacdn.com/tild3736-6130-4137-a533-313138656364/-/resize/263x/-/format/webp/9serial.png"
+                        alt="">
+                    <div>
+                        <p style="font-weight: bold;">DEUTZ-FAHR AGROLUX 4.80</p>
+                        <p>Маневренная, универсальная и простая в эксплуатации машина с короткой колесной базой была
+                            разработана специально для небольших фермерских хозяйств, животноводческих ферм,
+                            коммунальных служб, а также для проведения вспомогательных работ по уходу за посевами.
+                        </p>
+                        <div class="item_char_flex">
+                            <div>
+                                <span>ДВИГАТЕЛЬ И СИСТЕМА ПИТАНИЯ</span>
+                                <ul>
+                                    <li>Производитель SDF</li>
+                                    <li>Количество цилиндров 4</li>
+                                    <li>Рабочий объем 4000 см3</li>
+                                    <li>Соответствие экологическим нормам TIER 2</li>
+                                    <li>Максимальная мощность (SAE J1995) 81,3 л.с.</li>
+                                    <li>Максимальный крутящий момент 270 Нм</li>
+                                    <li>Общий объем топливных баков 65 л.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>ТРАНСМИССИЯ</span>
+                                <ul>
+                                    <li>Тип КПП Механическая</li>
+                                    <li>Количество скоростей вперед/назад 12/3</li>
+                                    <li>Максимальная скорость движения 30 км/ч</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>ХОДОВАЯ СИСТЕМА</span>
+                                <ul>
+                                    <li>Вкл./выкл. полного привода Механическое</li>
+                                    <li>Вкл./выкл. блокировок дифференциалов Механическое</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>ГИДРАВЛИЧЕСКАЯ СИСТЕМА И НАВЕСКА</span>
+                                <ul>
+                                    <li>Производительность насоса системы 45 л/мин.</li>
+                                    <li>Тип системы OCFD</li>
+                                    <li>Грузоподъемность заднего навесного устройства 3000 кг</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>ВАЛ ОТБОРА МОЩНОСТИ</span>
+                                <ul>
+                                    <li>Скоростные режимы ВОМ 540/1000 об/мин.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>ГАБАРИТНЫЕ РАЗМЕРЫ И ВЕС</span>
+                                <ul>
+                                    <li>Длина* 3445 мм</li>
+                                    <li>Минимальная ширина** 1900 мм</li>
+                                    <li>Максимальная высота** 2480 мм</li>
+                                    <li>Колесная база** 2105 мм</li>
+                                    <li>Минимальный вес без балластов** 3000 кг</li>
+                                    <li>Максимальный допустимый рабочий вес 4800 кг</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.deutz-fahr.com/ru-ru/products/tractors/3024-agrolux-4-80" class="details"
+                            target="__blank">Подробнее</a>
+                        <a href="#" class="order">Заказать</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <header th:insert="blocks/footer :: footer"></header>
+    </div>
+</body>
+
+</html>

@@ -13,7 +13,6 @@
 <body>
     <div class="container">
         <header th:insert="blocks/header :: header"></header>
-
         <div class="main_container">
             <section class="news"><a name="news"></a>
                 <h3>Новости</h3>
@@ -31,7 +30,7 @@
             <section class="content"><a name="content"></a>
                 <h2>Модельный ряд</h2>
                 <div class="content_items">
-                    <a th:href="@{/catalog/catalog1}" href="catalog1.html">
+                    <a th:href="@{/catalog/9seriaTTV}" href="9seriaTTV.html">
                         <img src="https://thumb.tildacdn.com/tild3736-6130-4137-a533-313138656364/-/resize/263x/-/format/webp/9serial.png"
                             alt="">
                         <div>
@@ -46,74 +45,89 @@
                 </div>
         </div>
         <div class="content_items">
-            <img src="https://thumb.tildacdn.com/tild3030-6331-4661-a136-313866393265/-/resize/283x/-/format/webp/6serial.png"
-                alt="">
-            <h4>6 Серия TTV</h4>
-            <p>10 моделей мощностью от 156 до 226 л. с., три колесных базы, три варианта трансмиссии, несколько
-                типов кабин с различными уровнями комфорта и множеством дополнительных возможностей.
-            </p>
+            <a th:href="@{/catalog/6seria}" href="6seria.html">
+                <img src="https://thumb.tildacdn.com/tild3030-6331-4661-a136-313866393265/-/resize/283x/-/format/webp/6serial.png"
+                    alt="">
+                <h4>6 Серия</h4>
+                <p>10 моделей мощностью от 156 до 226 л. с., три колесных базы, три варианта трансмиссии, несколько
+                    типов кабин с различными уровнями комфорта и множеством дополнительных возможностей.
+                </p>
+            </a>
         </div>
         <div class="content_items">
-            <img src="https://thumb.tildacdn.com/tild3038-3561-4763-b830-363263633833/-/resize/263x/-/format/webp/6__G.png"
-                alt="">
-            <h4>Серия 6G</h4>
-            <p>Новая серия DEUTZ-FAHR 6G – идеальное сочетание шестицилиндровых двигателей Deutz (соответствуют
-                экологическим нормам Stage III A), эффективных современных трансмиссий ZF и лучших в своем
-                классе гидравлических систем.
-            </p>
+            <a th:href="@{/catalog/6seriaG}" href="6seriaG.html">
+                <img src="https://thumb.tildacdn.com/tild3038-3561-4763-b830-363263633833/-/resize/263x/-/format/webp/6__G.png"
+                    alt="">
+                <h4>Серия 6G</h4>
+                <p>Новая серия DEUTZ-FAHR 6G – идеальное сочетание шестицилиндровых двигателей Deutz (соответствуют
+                    экологическим нормам Stage III A), эффективных современных трансмиссий ZF и лучших в своем
+                    классе гидравлических систем.
+                </p>
+            </a>
         </div>
         <div class="content_items">
-            <img src="https://thumb.tildacdn.com/tild3432-3832-4666-b731-376461316537/-/resize/263x/-/format/webp/6__W_Profi.png"
-                alt="">
-            <h4>Серия 6W Profi</h4>
-            <p>Новая серия 6W Profi, спроектированная в Италии, отличается современным дизайном и надежной
-                конструкцией, что обеспечивает высокую производительность и низкие эксплуатационные затраты.
-            </p>
+            <a th:href="@{/catalog/6wseriaProfi}" href="6wseriaProfi.html">
+                <img src="https://thumb.tildacdn.com/tild3432-3832-4666-b731-376461316537/-/resize/263x/-/format/webp/6__W_Profi.png"
+                    alt="">
+                <h4>Серия 6W Profi</h4>
+                <p>Новая серия 6W Profi, спроектированная в Италии, отличается современным дизайном и надежной
+                    конструкцией, что обеспечивает высокую производительность и низкие эксплуатационные затраты.
+                </p>
+            </a>
         </div>
         <div class="content_items">
-            <img src="https://thumb.tildacdn.com/tild3435-3165-4833-b437-653534393638/-/resize/283x/-/format/webp/6145_W_HD.png"
-                alt="">
-            <h4>6145W HD</h4>
-            <p>Новая серия 6145W HD комплектуются проверенными и испытанными двигателями Stage III A Yuchai,
-                эффективной синхронизированной трансмиссией, высокопроизводительными гидравлическими системами и
-                осями для тяжелых условий эксплуатации, которые обеспечивают превосходную надежность и
-                эффективность.
-            </p>
+            <a th:href="@{/catalog/6145whd}" href="6145whd.html">
+                <img src="https://thumb.tildacdn.com/tild3435-3165-4833-b437-653534393638/-/resize/283x/-/format/webp/6145_W_HD.png"
+                    alt="">
+                <h4>6145W HD</h4>
+                <p>Новая серия 6145W HD комплектуются проверенными и испытанными двигателями Stage III A Yuchai,
+                    эффективной синхронизированной трансмиссией, высокопроизводительными гидравлическими системами и
+                    осями для тяжелых условий эксплуатации, которые обеспечивают превосходную надежность и
+                    эффективность.
+                </p>
+            </a>
         </div>
         <div class="content_items">
-            <img src="https://thumb.tildacdn.com/tild3431-3034-4862-b835-323535383161/-/resize/283x/-/format/webp/AGROFARM_115_G.png"
-                alt="">
-            <h4>AGROFARM 115 G</h4>
-            <p>Данная модель отличается небольшими габаритными размерами и высокотехнологичным оснащением.
-                Трактор доступен в исполнении GS с КПП powershift и электрогидравлическим реверсом.
-            </p>
+            <a th:href="@{/catalog/agrofarm115g}" href="agrofarm115g.html">
+                <img src="https://thumb.tildacdn.com/tild3431-3034-4862-b835-323535383161/-/resize/283x/-/format/webp/AGROFARM_115_G.png"
+                    alt="">
+                <h4>AGROFARM 115 G</h4>
+                <p>Данная модель отличается небольшими габаритными размерами и высокотехнологичным оснащением.
+                    Трактор доступен в исполнении GS с КПП powershift и электрогидравлическим реверсом.
+                </p>
+            </a>
         </div>
         <div class="content_items">
-            <img src="https://thumb.tildacdn.com/tild6665-3064-4236-b065-383565343064/-/resize/263x/-/format/webp/AGROPLUS_V410.png"
-                alt="">
-            <h4>Agroplus F-V-S</h4>
-            <p>Это компактные, маневренные, многофункциональные машины для работы в садах и виноградниках.
-            </p>
+            <a th:href="@{/catalog/agroplusfvs}" href="agroplusfvs.html">
+                <img src="https://thumb.tildacdn.com/tild6665-3064-4236-b065-383565343064/-/resize/263x/-/format/webp/AGROPLUS_V410.png"
+                    alt="">
+                <h4>Agroplus F-V-S</h4>
+                <p>Это компактные, маневренные, многофункциональные машины для работы в садах и виноградниках.
+                </p>
+            </a>
         </div>
         <div class="content_items">
-            <img src="https://thumb.tildacdn.com/tild3265-3537-4162-b439-643032313735/-/resize/270x/-/format/webp/AGROLUX_480.png"
-                alt="">
-            <h4>AGROLUX 4.80</h4>
-            <p>Маневренная, универсальная и простая в эксплуатации машина с короткой колесной базой была
-                разработана специально для небольших фермерских хозяйств, животноводческих ферм, коммунальных
-                служб, а также для проведения вспомогательных работ по уходу за посевами.
-            </p>
+            <a th:href="@{/catalog/agrolux480}" href="agrolux480.html">
+                <img src="https://thumb.tildacdn.com/tild3265-3537-4162-b439-643032313735/-/resize/270x/-/format/webp/AGROLUX_480.png"
+                    alt="">
+                <h4>AGROLUX 4.80</h4>
+                <p>Маневренная, универсальная и простая в эксплуатации машина с короткой колесной базой была
+                    разработана специально для небольших фермерских хозяйств, животноводческих ферм, коммунальных
+                    служб, а также для проведения вспомогательных работ по уходу за посевами.
+                </p>
+            </a>
         </div>
         <div class="content_items">
-            <img src="https://thumb.tildacdn.com/tild6339-3662-4733-b266-343930316332/-/contain/380x285/center/center/-/format/webp/photo.png"
-                alt="">
-            <h4>DEUTZ-FAHR C 7206 TS Extrapower</h4>
-            <p>C7206 TS Extra Power был продуман в деталях, чтобы получить максимальное качество соломы и
-                высокую производительность, обеспечивая при этом непревзойденную эффективность и надежность.
-            </p>
+            <a th:href="@{/catalog/c7206}" href="c7206.html">
+                <img src="https://thumb.tildacdn.com/tild6339-3662-4733-b266-343930316332/-/contain/380x285/center/center/-/format/webp/photo.png"
+                    alt="">
+                <h4>DEUTZ-FAHR C 7206 TS Extrapower</h4>
+                <p>C7206 TS Extra Power был продуман в деталях, чтобы получить максимальное качество соломы и
+                    высокую производительность, обеспечивая при этом непревзойденную эффективность и надежность.
+                </p>
+            </a>
         </div>
         </section>
-
     </div>
     <section class="offer">
         <h2>Предлагаем</h2>
@@ -143,9 +157,7 @@
                 известным брендом, пользующимся мировым признанием.</p>
         </div>
     </section>
-
     <header th:insert="blocks/footer :: footer"></header>
-
     </div>
 </body>
 

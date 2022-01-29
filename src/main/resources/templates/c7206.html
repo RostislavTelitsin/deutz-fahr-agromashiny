@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агромашины | Продажа и обслуживание сельскохозяйственной техники</title>
+    <link rel="shortcut icon" type="image/png" href="../static/img/favikon.png" th:href="@{../static/img/favikon.png}">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{../css/style.css}">
+</head>
+
+<body>
+    <div class="container">
+        <header th:insert="blocks/header :: header"></header>
+        <div class="main_container">
+            <section class="news"><a name="news"></a>
+                <h3>Новости</h3>
+                <div class="news_items">
+                    <img src="../static/img/IMG-20211110-WA0002.jpg" th:src="@{../img/IMG-20211110-WA0002.jpg}" alt="">
+                    <p>Аграрная неделя ноябрь 2021
+                    </p>
+                </div>
+                <div class="news_items">
+                    <img src="../static/img/IMG_20220120_105041.jpg" th:src="@{../img/IMG_20220120_105041.jpg}" alt="">
+                    <p>Отгрузка в хозяйство Новосибирской области
+                    </p>
+                </div>
+            </section>
+            <section class="content"><a name="content"></a>
+                <div class="item_char">
+                    <h2>Комбайн зерноуборочный</h2>
+                    <img src="https://thumb.tildacdn.com/tild3736-6130-4137-a533-313138656364/-/resize/263x/-/format/webp/9serial.png"
+                        alt="">
+                    <div>
+                        <p style="font-weight: bold;">DEUTZ-FAHR C 7206 TS Extrapower</p>
+                        <p>C7206 TS Extra Power был продуман в деталях, чтобы получить максимальное качество соломы и
+                            высокую производительность, обеспечивая при этом непревзойденную эффективность и надежность.
+                        </p>
+                        <div class="item_char_flex">
+                            <div>
+                                <span>ДВИГАТЕЛЬ И СИСТЕМА ПИТАНИЯ</span>
+                                <ul>
+                                    <li>Производитель Deutz</li>
+                                    <li>Количество цилиндров 6</li>
+                                    <li>Рабочий объем 7200 см3</li>
+                                    <li>Соответствие экологическим нормам TIER 3A</li>
+                                    <li>Максимальная мощность 269 кВт / 366 л.с .</li>
+                                    <li>Общий объем топливных баков 750 л</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>ТРАНСМИССИЯ</span>
+                                <ul>
+                                    <li>Тип КПП</li>
+                                    <li>Гидростатическая</li>
+                                    <li>Количество скоростей вперед/назад 4/4</li>
+                                    <li>Максимальная скорость движения 30 км/ч</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>МОЛОТИЛЬНО-СЕПАРИРУЮЩЕЕ УСТРОЙСТВО</span>
+                                <ul>
+                                    <li>Диаметр молотильного барабана 600 мм</li>
+                                    <li>Ширина молотильного барабана 1520 мм</li>
+                                    <li>Диаметр барабана-сепаратора 590 мм</li>
+                                    <li>Количество клавиш соломотряса 6 ед.</li>
+                                    <li>Общая площадь обмолота и сепарации 8,8 м2</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>БУНКЕР И СИСТЕМА ВЫГРУЗКИ</span>
+                                <ul>
+                                    <li>Объем бункера 9500 л.</li>
+                                    <li>Производительность выгрузного шнека 90 л/с</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>ГАБАРИТНЫЕ РАЗМЕРЫ И ВЕС</span>
+                                <ul>
+                                    <li>Длина без жатки 9240 мм</li>
+                                    <li>Длина с жаткой 10890 мм</li>
+                                    <li>Ширина без жатки 3296 мм</li>
+                                    <li>Колесная база 3890 мм</li>
+                                    <li>Высота 3990 мм</li>
+                                    <li>Вес без жатки 17000 кг</li>
+                                    <li>Вес с жаткой 7,2 м 18670 кг</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.deutz-fahr.com/ru-ru/products/combine-harvesters/10821-c7206-ts-extra-power"
+                            class="details" target="__blank">Подробнее</a>
+                        <a href="#" class="order">Заказать</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <header th:insert="blocks/footer :: footer"></header>
+    </div>
+</body>
+
+</html>

@@ -177,7 +177,7 @@ nav a {
 
 
 .item_char {
-    width: 90%;
+    width: 95%;
     background-color: white;
     padding: 10px;
     border-radius: 5px;
@@ -226,6 +226,34 @@ nav a {
     margin-bottom: 10px;
     padding: 5px;
     
+}
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.details, .order {
+    background: #000;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    color: #84CB3F;
+    text-decoration: none;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    transition: .3s;
+    letter-spacing: 0.05rem;
+}
+
+.details:hover, .order:hover {
+    background: #84CB3F;
+    color: #333333;
+    font-weight: bold;
+    box-shadow: 0px 15px 20px rgba(37, 37, 37, 0.4);
+    transform: translateY(-7px);
 }
 
 /*---- Offer, About ----------------------------------------------------------------*/
@@ -346,7 +374,7 @@ footer {
         margin-bottom: 10px;
     }
 
-    .content_items p,.news_items p, .offer p, .about p, nav a, .contacts, .item_char li, .item_char p, .item_char span {
+    .content_items p,.news_items p, .offer p, .about p, nav a, .contacts, .item_char li, .item_char p, .item_char span, .details, .order {
         font-size: 0.6rem;
     }
     h3 {
@@ -382,6 +410,9 @@ footer {
         width: 100%;
     }
 
+    .details, .order {
+        letter-spacing: 0;
+    }
  }
 
 /* // Малые девайсы («ландшафтные», >= 575px) */
@@ -440,6 +471,9 @@ footer {
     }
     .item_char_flex div {
         width: 100%;
+    }
+    .details, .order {
+        font-size: 0.8rem;
     }
  }
 
