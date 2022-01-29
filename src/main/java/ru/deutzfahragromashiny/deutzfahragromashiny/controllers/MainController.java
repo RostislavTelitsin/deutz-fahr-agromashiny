@@ -41,6 +41,7 @@ public class MainController {
     public String catalog1(Model model) {
         model.addAttribute("/catalog1");
         return "catalog1";
+
     }
 
     @GetMapping("/login")
