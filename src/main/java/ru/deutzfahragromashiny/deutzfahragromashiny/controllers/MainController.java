@@ -135,7 +135,7 @@ public class MainController {
         n.setImgLibJson(libId);
         newsRepository.save(n);
 
-        return "redirect:/";
+        return "redirect:/newsedit";
     }
 
     @GetMapping("/newsedit")
