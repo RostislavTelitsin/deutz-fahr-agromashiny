@@ -335,8 +335,75 @@ footer {
     color: white;
 }
 
+/*---- News All ----------------------------------------------------------------*/
 
+.news_all  {
+    width: 100%;
+}
 
+.news_all h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.news_full_description {
+    background: linear-gradient(#ffffff, #AEBD38);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+.active {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.active, .none {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.news_slider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+    margin: 0 auto 10px;
+}
+
+.next, .prev {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(233, 230, 233, 0.7);
+    top:50%;
+    transition: all 0.5s ease;
+}
+
+.next:hover, .prev:hover {
+    transform: rotate(360deg);
+    background: rgba(	174, 189, 56, 0.9);
+}
+
+.next {
+    right:0;
+}
+
+.prev {
+    left:0%;
+}
+
+.news_date {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
 
 /*---- Media ----------------------------------------------------------------*/
 
@@ -353,6 +420,10 @@ footer {
     }
     .news, .content,.news_items, .content_items,.about div, .offer div {
         width: 100%;
+    }
+
+    .news_slider{
+        width: 80%;
     }
     .news {
         display: flex;
@@ -374,7 +445,7 @@ footer {
         margin-bottom: 10px;
     }
 
-    .content_items p,.news_items p, .offer p, .about p, nav a, .contacts, .item_char li, .item_char p, .item_char span, .details, .order {
+    .content_items p,.news_items p, .offer p, .about p, nav a, .contacts, .item_char li, .item_char p, .item_char span, .details, .order, .news_full_description p, .news_full_description span {
         font-size: 0.6rem;
     }
     h3 {
@@ -450,7 +521,7 @@ footer {
         margin-right: 10px;
     }
 
-    .content_items p,.news_items p, .offer p, .about p, nav a, .contacts, .item_char li, .item_char p, .item_char span {
+    .content_items p,.news_items p, .offer p, .about p, nav a, .contacts, .item_char li, .item_char p, .item_char span,.news_full_description p, .news_full_description span {
         font-size: 0.8rem;
     }
     h3 {
