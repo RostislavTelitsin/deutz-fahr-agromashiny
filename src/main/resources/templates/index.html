@@ -14,9 +14,7 @@
     <div class="container">
         <header th:insert="blocks/header :: header"></header>
         <div class="main_container">
-            <section class="news"><a name="news"></a>
-                <header th:insert="blocks/newsblock :: fragment"></header>
-
+            <section class="news"><a name="news" th:insert="blocks/newsblock :: fragment"></a>
             </section>
             <section class="content"><a name="content"></a>
                 <h2>Модельный ряд</h2>
@@ -151,7 +149,7 @@
                     известным брендом, пользующимся мировым признанием.</p>
             </div>
         </section>
-        <header th:insert="blocks/footer :: footer"></header>
+        <footer th:insert="blocks/footer :: footer"></footer>
     </div>
 </body>
 
