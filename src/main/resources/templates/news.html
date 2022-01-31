@@ -12,15 +12,14 @@
 <body>
 <div class="container-fluid  singlenewsblock">
 
-    <div class="row">
-        <div class="col">
-            <header  th:insert="blocks/header :: header"></header>
-        </div>
+    <div>
+        <header  th:insert="blocks/header :: header"></header>
+
     </div>
 
     <div class="news_full_description">
-        <h3>Новость 1</h3>
-        <h3 th:text="${newsAndImg.news.titleNews}">Новость 1</h3>
+
+        <h3 th:text="${newsAndImg.news.titleNews}"></h3>
         <div class="news_slider">
 
             <img th:src="@{../img/left.png}" src="../static/img/left.png" class="prev" alt="">
@@ -36,18 +35,9 @@
     </div>
 
 
-<!--    <div class="row">-->
-<!--        <div class="col">-->
-<!--            <div class="clearfix">-->
-<!--                <h1 th:text="${newsAndImg.news.titleNews}"></h1>-->
-<!--                <img th:src="${newsAndImg.imgs[0]}" src="../static/img/n1.jpg" alt="..." class="rounded float-end img-fluid">-->
-<!--                <p th:text="${newsAndImg.news.contentNews}"></p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
 
 
-    <div class="row">
+    <div>
         <header th:insert="blocks/footer :: footer"></header>
     </div>
 

@@ -7,28 +7,18 @@
         <tr th:each="n:${newsAndImgs}" >
 
             <div class="news_items">
-                <img th:src="${n.imgs[0]}" src="../static/img/IMG_20220120_105041.jpg" class="card-img-top" alt="">
+                <a th:href="@{'/news/' + ${n.news.Id}}" class="stretched-link">
+                    <img th:src="${n.imgs[0]}" src="../static/img/IMG_20220120_105041.jpg" class="card-img-top" alt="">
 
-                    <h4 class="card-title" th:text="${n.news.titleNews}">Новость 1 </h4>
-                    <p th:text="${n.news.announcementNews}">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a th:href="@{'/news/' + ${n.news.Id}}" class="stretched-link"></a>
+                    <h4 class="card-title" th:text="${n.news.titleNews}"></h4>
+                    <p th:text="${n.news.announcementNews}"></p>
 
+                </a>
             </div>
         </tr>
 
         </tbody>
 
     </table>
-
-<!--    <div class="news_items">-->
-<!--        <img src="../static/img/IMG-20211110-WA0002.jpg" th:src="@{../img/IMG-20211110-WA0002.jpg}" alt="">-->
-<!--        <p>Аграрная неделя ноябрь 2021-->
-<!--        </p>-->
-<!--    </div>-->
-<!--    <div class="news_items">-->
-<!--        <img src="../static/img/IMG_20220120_105041.jpg" th:src="@{../img/IMG_20220120_105041.jpg}" alt="">-->
-<!--        <p>Отгрузка в хозяйство Новосибирской области-->
-<!--        </p>-->
-<!--    </div>-->
 
 </div>
