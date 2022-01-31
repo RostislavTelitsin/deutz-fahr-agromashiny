@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,60 +10,53 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="main_container">
-            <section class="news_all">
-                <div class="news_full_description">
-                    <h3>Новость 1</h3>
-                    <div class="news_slider">
-                        <img src="../static/img/left.png" class="prev" alt="">
-                        <img src="../static/img/right.png" class="next" alt="">
-                        <img src="../static/img/news/news1/n1.jpg" class="active" alt="">
-                        <img src="../static/img/news/news1/n2.jpg" class="none" alt="">
-                        <img src="../static/img/news/news1/n3.jpg" class="none" alt="">
-                        <img src="../static/img/news/news1/bolt.jpg" class="none" alt="">
-                        <img src="../static/img/news/news1/IMG_20220120_105041.jpg" class="none" alt="">
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam minima nam, pariatur quidem
-                        sequi facere, provident ex delectus blanditiis sint alias numquam enim excepturi tenetur quaerat
-                        saepe aperiam. Ipsum, fuga!</p>
-                    <span class="news_date">10.10.2022</span>
-                </div>
-                <div class="news_full_description">
-                    <h3>Новость 2</h3>
-                    <div class="news_slider">
-                        <img src="../static/img/left.png" class="prev" alt="">
-                        <img src="../static/img/right.png" class="next" alt="">
-                        <img src="../static/img/news/news2/n1.jpg" class="active" alt="">
-                        <img src="../static/img/news/news2/n2.jpg" class="none" alt="">
-                        <img src="../static/img/news/news2/n3.jpg" class="none" alt="">
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam minima nam, pariatur quidem
-                        sequi facere, provident ex delectus blanditiis sint alias numquam enim excepturi tenetur quaerat
-                        saepe aperiam. Ipsum, fuga!</p>
-                    <span class="news_date">10.10.2022</span>
-                </div>
-                <div class="news_full_description">
-                    <h3>Новость 3</h3>
-                    <div class="news_slider">
-                        <img src="../static/img/left.png" class="prev" alt="">
-                        <img src="../static/img/right.png" class="next" alt="">
-                        <img src="../static/img/news/news3/n1.jpg" class="active" alt="">
-                        <img src="../static/img/news/news3/n2.jpg" class="none" alt="">
-                        <img src="../static/img/news/news3/n3.jpg" class="none" alt="">
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam minima nam, pariatur quidem
-                        sequi facere, provident ex delectus blanditiis sint alias numquam enim excepturi tenetur quaerat
-                        saepe aperiam. Ipsum, fuga!</p>
-                    <span class="news_date">10.10.2022</span>
-                </div>
-            </section>
+<div class="container-fluid  singlenewsblock">
 
-
+    <div class="row">
+        <div class="col">
+            <header  th:insert="blocks/header :: header"></header>
         </div>
     </div>
-    <script src="../static/js/main.js"></script>
-    <script src="../static/js/slider.js"></script>
-</body>
 
+    <div class="news_full_description">
+        <h3>Новость 1</h3>
+        <h3 th:text="${newsAndImg.news.titleNews}">Новость 1</h3>
+        <div class="news_slider">
+
+            <img th:src="@{../img/left.png}" src="../static/img/left.png" class="prev" alt="">
+            <img th:src="@{../img/right.png}" src="../static/img/right.png" class="next" alt="">
+
+            <td th:each="picture, iterstat : ${newsAndImg.imgs}" >
+                <img th:src="${picture}" class="" th:class="${iterstat.index}== 0  ? 'active':'none'">
+            </td>
+
+        </div>
+        <p th:text="${newsAndImg.news.contentNews}"></p>
+        <span class="news_date">10.10.2022</span>
+    </div>
+
+
+<!--    <div class="row">-->
+<!--        <div class="col">-->
+<!--            <div class="clearfix">-->
+<!--                <h1 th:text="${newsAndImg.news.titleNews}"></h1>-->
+<!--                <img th:src="${newsAndImg.imgs[0]}" src="../static/img/n1.jpg" alt="..." class="rounded float-end img-fluid">-->
+<!--                <p th:text="${newsAndImg.news.contentNews}"></p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+    <div class="row">
+        <header th:insert="blocks/footer :: footer"></header>
+    </div>
+
+    <script th:src="@{../js/main.js}" src="../static/js/main.js"></script>
+    <script th:src="@{../js/slider.js}" src="../static/js/slider.js"></script>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
 </html>

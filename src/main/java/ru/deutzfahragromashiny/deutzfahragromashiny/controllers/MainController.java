@@ -105,9 +105,23 @@ public class MainController {
         return "c7206";
     }
 
+    @GetMapping("/news/{idNews}")
+    public String news(@PathVariable(value = "idNews") int id, Model model) {
+        NewsAndImg nn = storageServ.getNewsAndImg(id);
+        model.addAttribute("newsAndImg", nn);
+
+        return "news";
+
+    }
 
 
 
+
+    @GetMapping("/news2")
+    public String news2(Model model) {
+
+        return "news2";
+    }
 
 
     @GetMapping("/login")
