@@ -97,7 +97,7 @@ nav a {
 .news {
     width: 15%;
     text-align: center;
-    background-color: #AEBD38;
+    background-color: #84cb3F;
     border-radius: 5px;
     padding: 5px;
 
@@ -222,7 +222,7 @@ nav a {
     width: 40%;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 1px 2px 5px -1px #297042;
+    box-shadow: 1px 2px 5px -1px #84cb3f;
     margin-bottom: 10px;
     padding: 5px;
     
@@ -283,7 +283,7 @@ nav a {
 }
 
 .about {
-    background-color: #598234;
+    background-color: #84CB3F;
     padding: 10px 5px;
     border-radius: 5px;
 }
@@ -347,7 +347,7 @@ footer {
 }
 
 .news_full_description {
-    background: linear-gradient(#ffffff, #AEBD38);
+    background: linear-gradient(#ffffff, ##84CB3F);
     border-radius: 5px;
     padding: 10px 10px;
     margin-bottom: 20px;
